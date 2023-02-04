@@ -1,0 +1,52 @@
+class RPG:
+    def __init__(self, DarkSouls, DarkSouls2):
+        self.DarkSouls = DarkSouls
+        self.DarkSouls2 = DarkSouls2
+
+    def Minecraft(self):
+        print("Minecraft является RPG")
+
+    def Sekiro(self):
+        print("Sekiro является RPG")
+
+    def Genshin_inpact(self):
+        print("Genshin_inpact является RPG")
+
+
+class MOBA(RPG):
+    def __init__(self, DarkSouls, DarkSouls2, DarkSouls3):
+        super().__init__(DarkSouls, DarkSouls2)
+        self.DarkSouls3 = DarkSouls3
+
+    def Genshin_inpact(self):
+        print("Genshin_inpact является MOBA")
+
+
+class Strategi(RPG):
+    def __init__(self, DarkSouls="default_DarkSouls", Dark_Souls2="default_DarkSouls2"):
+        super().__init__(DarkSouls, DarkSouls)
+
+    def warcraft(self):
+        print("warcraft in Strategi")
+
+    def dota2(self):
+        print("dota2 in Strategi")
+
+
+a = RPG('DarkSouls_value', 'DarkSouls2_value')
+b = MOBA('DarkSouls_value', 'DarkSouls2_value', 'DarkSouls3_value')
+c = Strategi()
+
+a.DarkSouls()
+a.Minecraft()
+a.Genshin_inpact()
+
+b.DarkSouls()
+b.Minecraft()
+b.Genshin_inpact()
+
+c.DarkSouls()
+c.Minecraft()
+c.Genshin_inpact()
+c.Apex()
+c.Titanfall()
