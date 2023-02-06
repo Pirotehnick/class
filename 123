@@ -37,16 +37,17 @@ a = RPG('DarkSouls_value', 'DarkSouls2_value')
 b = MOBA('DarkSouls_value', 'DarkSouls2_value', 'DarkSouls3_value')
 c = Strategi()
 
-a.DarkSouls()
+a.Sekiro()
 a.Minecraft()
 a.Genshin_inpact()
 
-b.DarkSouls()
+b.Sekiro()
 b.Minecraft()
 b.Genshin_inpact()
 
 c.DarkSouls()
 c.Minecraft()
 c.Genshin_inpact()
-c.Apex()
-c.Titanfall()
+c.warcraft()
+c.dota2
+()
